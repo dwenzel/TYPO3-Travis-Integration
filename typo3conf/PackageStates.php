@@ -304,10 +304,10 @@ return array (
       'packagePath' => 'typo3conf/ext/phpunit/',
       'classesPath' => 'Classes/',
     ),
-	  'news' =>
+	  'placements' =>
 	  array (
 		  'state' => 'active',
-		  'packagePath' => 'typo3conf/ext/news/',
+		  'packagePath' => 'typo3conf/ext/placements/',
 		  'classesPath' => 'Classes/',
 	  ),
     'recordlist' =>
