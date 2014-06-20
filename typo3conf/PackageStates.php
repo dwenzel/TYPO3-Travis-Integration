@@ -304,12 +304,18 @@ return array (
       'packagePath' => 'typo3conf/ext/phpunit/',
       'classesPath' => 'Classes/',
     ),
-	  'placements' =>
-	  array (
-		  'state' => 'active',
-		  'packagePath' => 'typo3conf/ext/placements/',
-		  'classesPath' => 'Classes/',
-	  ),
+    'placements' =>
+    array (
+    	'state' => 'active',
+    	'packagePath' => 'typo3conf/ext/placements/',
+    	'classesPath' => 'Classes/',
+    ),
+    'ajaxmap' =>
+    array (
+    	'state' => 'active',
+    	'packagePath' => 'typo3conf/ext/ajaxmap/',
+    	'classesPath' => 'Classes/',
+    ),
     'recordlist' =>
     array (
       'manifestPath' => '',
