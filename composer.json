@@ -1,4 +1,10 @@
 {
+      "repositories": [
+            {
+                  "type": "vcs",
+                  "url": "https://github.com/satooshi/php-coveralls"
+                  }
+      ],
       "require-dev": {
                 "satooshi/php-coveralls": "dev-master"
                       }
