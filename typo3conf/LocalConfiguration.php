@@ -61,7 +61,7 @@ return array(
 			'scheduler',
 			'indexed_search',
 			'saltedpasswords',
-			'ajaxmap'
+			'placements'
 		),
 	),
 	'FE' => array(
