@@ -84,6 +84,7 @@ function phpCodeSniff {
 	pear config-set preferred_state alpha
 	pear install typo3/TYPO3CMS
 	pear config-set preferred_state stable
+	phpenv rehash
 	phpcs -i
 }
 	
