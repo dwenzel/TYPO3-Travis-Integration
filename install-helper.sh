@@ -85,7 +85,8 @@ function phpCodeSniff {
 	pear install typo3/TYPO3CMS
 	pear config-set preferred_state stable
 	phpenv rehash
-	phpcs --standard=TYPO3CMS $PWD/typo3conf/ext/ajaxmap/
+	phpcs -i
+	#phpcs --standard=TYPO3CMS $PWD/typo3conf/ext/ajaxmap/
 }
 	
 	
