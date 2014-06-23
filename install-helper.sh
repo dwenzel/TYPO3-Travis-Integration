@@ -80,7 +80,11 @@ function phpLint {
 }
 
 function phpCodeSniff {
-	php $PWD/vendor/squizlabs/php_codesniffer/scripts/phpcs -i
+	pear channel-discover pear.typo3.org
+	pear pear config-set preferred_state alpha
+	pear install typo3/TYPO3CMS
+	pear pear config-set preferred_state stable
+	phpcs -i
 }
 	
 	
