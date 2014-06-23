@@ -79,7 +79,7 @@ function phpLint {
 	return 0
 }
 
-php phpCodeSniff {
+function phpCodeSniff {
 	phpcs -i
 }
 	
