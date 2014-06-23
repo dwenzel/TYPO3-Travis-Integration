@@ -55,6 +55,7 @@ function installRedis() {
 	cd $_pwd
 }
 
+
 function phpLint {
 	for file in `find . -name \*.php`
 	do
@@ -77,3 +78,9 @@ function phpLint {
 
 	return 0
 }
+
+php phpCodeSniff {
+	phpcs -i
+}
+	
+	
