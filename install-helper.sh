@@ -80,7 +80,7 @@ function phpLint {
 }
 
 function phpCodeSniff {
-	php vendor/squizlabs/php_codesniffer/scripts/phpcs -i
+	php $PWD/vendor/squizlabs/php_codesniffer/scripts/phpcs -i
 }
 	
 	
