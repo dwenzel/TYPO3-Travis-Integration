@@ -81,7 +81,7 @@ function phpLint {
 
 function phpCodeSniff {
 	pear channel-discover pear.typo3.org
-	pear config-set preferred_state alpha
+	pear config-set preferred_state devel
 	pear install typo3/TYPO3CMS
 	pear config-set preferred_state stable
 	phpenv rehash
