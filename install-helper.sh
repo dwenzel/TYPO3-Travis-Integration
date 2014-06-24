@@ -77,3 +77,17 @@ function phpLint {
 
 	return 0
 }
+
+function phpCodeSniff {
+	# install alpha version of typo3/TYPO3CMS
+	pear channel-discover pear.typo3.org
+	pear config-set preferred_state devel
+	pear install typo3/TYPO3CMS
+	pear config-set preferred_state stable
+	# force install of PHP_CodeSniffer version 1.5.3
+	pear channel-update pear.php.net
+	pear install -f PHP_CodeSniffer-1.5.3
+	phpenv rehash
+	phpcs -i
+	phpcs -n --extensions=php --report=summary --report-full=$PWD/build/artifacts/log/phpcs_report.txt --ignore=ext_emconf.php --standard=TYPO3CMS $PWD/typo3conf/ext/ajaxmap/
+}
