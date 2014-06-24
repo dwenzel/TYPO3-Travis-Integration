@@ -90,7 +90,7 @@ function phpCodeSniff {
 	pear install -f PHP_CodeSniffer-1.5.3
 	phpenv rehash
 	phpcs -i
-	phpcs --standard=TYPO3CMS $PWD/typo3conf/ext/ajaxmap/
+	phpcs -n --extensions=php --report=summary --report-full=$PWD/build/artifacts/log/phpcs_report.txt --ignore=ext_emconf.php --standard=TYPO3CMS $PWD/typo3conf/ext/ajaxmap/
 }
 	
 	
