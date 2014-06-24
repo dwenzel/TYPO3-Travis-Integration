@@ -89,7 +89,7 @@ function phpCodeSniff {
 	pear channel-update pear.php.net
 	pear install -f PHP_CodeSniffer-1.5.3
 	phpenv rehash
-	phpcs -n --extensions=php --report=summary --report-full=$PWD/build/artifacts/logs/phpcs_report.txt --ignore=ext_emconf.php --standard=TYPO3CMS $PWD/typo3conf/ext/ajaxmap/
+	phpcs -n --extensions=php --report=summary --report-full=$PWD/build/artifacts/logs/phpcs_report.txt --ignore=ext_emconf.php --standard=TYPO3CMS $PWD/typo3conf/ext/ajaxmap/ 2> $PWD/build/artifacts/logs/phpcs_error.log
 }
 	
 	
