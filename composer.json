@@ -7,8 +7,5 @@
       ],
       "require-dev": {
                 "satooshi/php-coveralls": "dev-master"
-                      },
-      "require" : { 
-            "phpunit/phpunit": "4.1.3"
       }
 }
