@@ -61,7 +61,7 @@ return array(
 			'scheduler',
 			'indexed_search',
 			'saltedpasswords',
-			'placements'
+			't3events'
 		),
 	),
 	'FE' => array(
